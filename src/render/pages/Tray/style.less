@@ -1,0 +1,56 @@
+.tray {
+  &-icon {
+    padding: 14px 0 6px 12px;
+    display: inline-block;
+    vertical-align: middle;
+    &-title {
+      display: block;
+      font-size: 13px;
+      line-height: 20px;
+    }
+    &-version {
+      display: block;
+      font-size: 10px;
+      color: #888888;
+      letter-spacing: 0.5px;
+      line-height: 16px;
+    }
+  }
+  &-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  &-item {
+    &-button {
+      display: block;
+      padding: 8px 12px;
+      width: 100%;
+      border: none;
+      color: #000000;
+      background-color: transparent;
+      text-align: left;
+      font-size: 12px;
+      letter-spacing: 0.5px;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        background-color: #eaecee;
+      }
+      &.active {
+        color: #288828;
+        background-color: #ebedef;
+      }
+      &.disabled {
+        color: #888888;
+        cursor: not-allowed;
+      }
+    }
+  }
+  &-divider {
+    margin: 8px;
+    height: 1px;
+    width: calc(100% - 16px);
+    background-color: #b9bcbf;
+  }
+}

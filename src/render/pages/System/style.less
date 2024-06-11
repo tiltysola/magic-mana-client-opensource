@@ -1,0 +1,108 @@
+.system {
+  display: flex;
+  height: 100%;
+  &-root {
+    display: inline-block;
+    width: calc(68px + 14%);
+    height: 100%;
+    min-width: 180px;
+    max-width: 240px;
+    border-radius: 24px;
+    background-color: #00000028;
+    vertical-align: top;
+    overflow: hidden;
+    &-ul {
+      padding-left: 0;
+      list-style: none;
+      &-li {
+        padding: 3px 20px 5px 20px;
+        background-color: #00000028;
+        cursor: pointer;
+        &-icon {
+          font-size: 10px;
+        }
+        &-span {
+          margin-left: 8px;
+          color: #dddddd;
+          font-size: 12px;
+          letter-spacing: 2px;
+        }
+        &:hover,
+        &.active {
+          background-color: #00000038;
+          .system-root-ul-li-span {
+            color: #ffffff;
+          }
+        }
+        &:nth-child(2n) {
+          background-color: #00000008;
+          &:hover,
+          &.active {
+            background-color: #00000018;
+          }
+        }
+      }
+    }
+  }
+  &-sub {
+    display: inline-block;
+    height: 100%;
+    margin-left: 24px;
+    border-radius: 24px;
+    background-color: #00000028;
+    vertical-align: top;
+    overflow: auto;
+    flex: 1;
+    &-ul {
+      padding-left: 0;
+      list-style: none;
+      &-li {
+        display: flex;
+        padding: 5px 20px;
+        color: #dddddd;
+        font-size: 12px;
+        letter-spacing: 2px;
+        background-color: #00000028;
+        cursor: pointer;
+        &-icon {
+          font-size: 10px;
+          & + .system-sub-ul-li-label {
+            margin-left: 8px;
+          }
+        }
+        &-label {
+          margin-left: 18px;
+          white-space: nowrap;
+        }
+        &-data {
+          margin-left: 8px;
+          word-break: break-all;
+          flex: 1;
+        }
+        &:hover {
+          background-color: #00000038;
+          .system-root-ul-li-label,
+          .system-root-ul-li-data {
+            color: #ffffff;
+          }
+        }
+        &:nth-child(2n) {
+          background-color: #00000008;
+          &:hover {
+            background-color: #00000018;
+          }
+        }
+        * {
+          vertical-align: middle;
+        }
+      }
+    }
+    &-loading {
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff88;
+    }
+  }
+}

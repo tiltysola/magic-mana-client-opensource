@@ -1,0 +1,68 @@
+.control-bar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+  &-main {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 18px;
+    background-color: #00000028;
+    backdrop-filter: blur(3px);
+  }
+  &-sub {
+    display: inline-block;
+    margin-right: 12px;
+    padding: 6px 12px;
+    border-radius: 18px;
+    background-color: #00000028;
+    backdrop-filter: blur(3px);
+  }
+  &-button {
+    padding: 6px 8px;
+    font-size: 16px;
+    color: #ffffff;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  &-setting {
+    &:hover,
+    &.active {
+      color: #888888;
+    }
+  }
+  &-crosshair {
+    &:hover,
+    &.active {
+      color: #8888dd;
+    }
+  }
+  &-analysis {
+    &:hover,
+    &.active {
+      color: #8888dd;
+    }
+  }
+  &-refresh {
+    .anticon {
+      transition: transform 0.5s ease-in-out;
+    }
+    &:hover {
+      color: #888888;
+      .anticon {
+        transform: rotate(90deg);
+      }
+    }
+  }
+  &-minimize,
+  &-resize {
+    &:hover {
+      color: #888888;
+    }
+  }
+  &-close {
+    &:hover {
+      color: #ff8888;
+    }
+  }
+}

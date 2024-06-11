@@ -1,0 +1,58 @@
+.eula {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 64px 128px;
+  width: calc(100% - 256px);
+  height: calc(100% - 128px);
+  background-color: #00000088;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-out 0.3s;
+  backdrop-filter: blur(20px);
+  z-index: 9999;
+  &-title {
+    margin-bottom: 32px;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+  }
+  &-content {
+    margin: 0 auto;
+    padding: 0 24px;
+    height: calc(100% - 128px);
+    border: 1px solid #00000028;
+    background-color: #00000028;
+    overflow-y: scroll;
+    * {
+      color: #cccccc;
+      font-family: 'eula', sans-serif !important;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #00000028;
+    }
+  }
+  &-button {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 8px 0;
+    width: 50%;
+    border: none;
+    color: #cccccc;
+    background-color: #00000028;
+    transition: all 0.3s;
+    cursor: pointer;
+    &-group {
+      display: flex;
+      gap: 20px;
+    }
+    &:hover {
+      color: #ffffff;
+      background-color: #00000058;
+    }
+  }
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+}

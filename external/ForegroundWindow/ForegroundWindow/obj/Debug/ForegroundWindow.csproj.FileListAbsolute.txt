@@ -1,0 +1,8 @@
+D:\Projects\futo\aya-spices\external\ForegroundWindow\ForegroundWindow\bin\Debug\ForegroundWindow.exe.config
+D:\Projects\futo\aya-spices\external\ForegroundWindow\ForegroundWindow\bin\Debug\ForegroundWindow.exe
+D:\Projects\futo\aya-spices\external\ForegroundWindow\ForegroundWindow\bin\Debug\ForegroundWindow.pdb
+D:\Projects\futo\aya-spices\external\ForegroundWindow\ForegroundWindow\obj\Debug\ForegroundWindow.csproj.AssemblyReference.cache
+D:\Projects\futo\aya-spices\external\ForegroundWindow\ForegroundWindow\obj\Debug\ForegroundWindow.csproj.SuggestedBindingRedirects.cache
+D:\Projects\futo\aya-spices\external\ForegroundWindow\ForegroundWindow\obj\Debug\ForegroundWindow.csproj.CoreCompileInputs.cache
+D:\Projects\futo\aya-spices\external\ForegroundWindow\ForegroundWindow\obj\Debug\ForegroundWindow.exe
+D:\Projects\futo\aya-spices\external\ForegroundWindow\ForegroundWindow\obj\Debug\ForegroundWindow.pdb

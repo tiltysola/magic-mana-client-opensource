@@ -1,0 +1,56 @@
+.crash {
+  &-component {
+    position: relative;
+    display: flex;
+    height: calc(100% - 96px);
+    padding: 24px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &-simple {
+      height: calc(100% - 48px);
+    }
+  }
+  &-header {
+    padding: 32px;
+    border-bottom: 1px solid #00000028;
+    text-align: center;
+    &-logo {
+      display: block;
+      width: 128px;
+      height: 128px;
+    }
+    &-info {
+      color: #cccccc;
+      font-size: 24px;
+      line-height: 36px;
+      vertical-align: bottom;
+    }
+  }
+  &-main {
+    padding-top: 16px;
+    &-text-primary {
+      color: #cccccc;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  &-footer {
+    text-align: center;
+    &-button {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 8px 0;
+      width: 240px;
+      border: none;
+      color: #cccccc;
+      background-color: #00000028;
+      transition: all 0.3s;
+      cursor: pointer;
+      &:hover {
+        color: #ffffff;
+        background-color: #00000058;
+      }
+    }
+  }
+}

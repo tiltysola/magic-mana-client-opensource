@@ -1,0 +1,11 @@
+package-lock.json
+yarn.lock
+node_modules
+
+dist
+
+.eslintcache
+.DS_Store
+
+external/**/bin
+external/**/.vs

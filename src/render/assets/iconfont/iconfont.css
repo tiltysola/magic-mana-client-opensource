@@ -1,0 +1,239 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2871580 */
+  src: url('iconfont.woff2?t=1667886817214') format('woff2'),
+       url('iconfont.woff?t=1667886817214') format('woff'),
+       url('iconfont.ttf?t=1667886817214') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-galaxy:before {
+  content: "\e665";
+}
+
+.icon-crosshair:before {
+  content: "\e800";
+}
+
+.icon-website:before {
+  content: "\e7be";
+}
+
+.icon-password:before {
+  content: "\e614";
+}
+
+.icon-yijianfankui:before {
+  content: "\e61d";
+}
+
+.icon-setting1:before {
+  content: "\e633";
+}
+
+.icon-ziyuanjrit:before {
+  content: "\e642";
+}
+
+.icon-leaf:before {
+  content: "\ebf5";
+}
+
+.icon-gongjuxiang:before {
+  content: "\e649";
+}
+
+.icon-Chevron-Right:before {
+  content: "\e610";
+}
+
+.icon-Chevron-Left:before {
+  content: "\e612";
+}
+
+.icon-Wikis-outlined:before {
+  content: "\e70a";
+}
+
+.icon-mobile-phone:before {
+  content: "\e678";
+}
+
+.icon-user:before {
+  content: "\e611";
+}
+
+.icon-dns:before {
+  content: "\e632";
+}
+
+.icon-book:before {
+  content: "\e609";
+}
+
+.icon-embed2:before {
+  content: "\e6c4";
+}
+
+.icon-chat:before {
+  content: "\e62c";
+}
+
+.icon-resize-max:before {
+  content: "\e68d";
+}
+
+.icon-resize-min:before {
+  content: "\e68e";
+}
+
+.icon-repair:before {
+  content: "\e675";
+}
+
+.icon-circle:before {
+  content: "\e74d";
+}
+
+.icon-close-bold:before {
+  content: "\e685";
+}
+
+.icon-lightforbid:before {
+  content: "\e6f7";
+}
+
+.icon-lightfill:before {
+  content: "\e6f8";
+}
+
+.icon-analysis:before {
+  content: "\e6f9";
+}
+
+.icon-disk:before {
+  content: "\ebda";
+}
+
+.icon-filestorage:before {
+  content: "\eca1";
+}
+
+.icon-monitor:before {
+  content: "\ebfd";
+}
+
+.icon-dashboard:before {
+  content: "\e6c1";
+}
+
+.icon-hdd:before {
+  content: "\ebdc";
+}
+
+.icon-motherboard:before {
+  content: "\ebdd";
+}
+
+.icon-cpu:before {
+  content: "\ebd9";
+}
+
+.icon-localnetwork:before {
+  content: "\ebdf";
+}
+
+.icon-ram:before {
+  content: "\ebe1";
+}
+
+.icon-videocard:before {
+  content: "\ebe4";
+}
+
+.icon-refresh:before {
+  content: "\e615";
+}
+
+.icon-moneycollect:before {
+  content: "\e7cd";
+}
+
+.icon-bug:before {
+  content: "\e8e8";
+}
+
+.icon-error:before {
+  content: "\e7df";
+}
+
+.icon-team:before {
+  content: "\e7ae";
+}
+
+.icon-musicfill:before {
+  content: "\e795";
+}
+
+.icon-musicforbidfill:before {
+  content: "\e796";
+}
+
+.icon-folder:before {
+  content: "\e7d1";
+}
+
+.icon-desktop:before {
+  content: "\e842";
+}
+
+.icon-Function:before {
+  content: "\e90e";
+}
+
+.icon-alipay:before {
+  content: "\e87c";
+}
+
+.icon-logout:before {
+  content: "\e78c";
+}
+
+.icon-enter:before {
+  content: "\e7fe";
+}
+
+.icon-rollback:before {
+  content: "\e7ff";
+}
+
+.icon-reload:before {
+  content: "\e788";
+}
+
+.icon-setting:before {
+  content: "\e78e";
+}
+
+.icon-delete:before {
+  content: "\e7c3";
+}
+
+.icon-plus:before {
+  content: "\e8fe";
+}
+
+.icon-close:before {
+  content: "\e7fc";
+}
+
+.icon-minus:before {
+  content: "\e7fd";
+}
+

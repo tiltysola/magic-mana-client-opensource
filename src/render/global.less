@@ -1,0 +1,114 @@
+* {
+  letter-spacing: 1px;
+  outline: none;
+  user-select: none;
+}
+
+*:not(.bf-container *) {
+  font-family: 'font', sans-serif;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+#root {
+  position: relative;
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  margin: 20px;
+  border: 2px solid #00000028;
+  border-radius: 24px;
+  background-color: #00000028;
+  box-shadow: 0 0 15px #00000068;
+  overflow: hidden;
+  &.maximize {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  &.suspension {
+    border: 2px solid #00000028;
+    border-radius: 0;
+    background-color: #00000088;
+    box-shadow: 0 0 15px #00000068;
+  }
+  &.protection,
+  &.updater {
+    width: calc(100% - 104px);
+    height: calc(100% - 104px);
+    padding: 32px;
+    border: 2px solid #00000028;
+    border-radius: 24px;
+    background-color: #000000a8;
+    box-shadow: 0 0 15px #00000068;
+  }
+  &.tray {
+    width: calc(100% - 22px);
+    height: calc(100% - 22px);
+    margin: 10px;
+    padding: 0;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    background-color: #dde1e5;
+    box-shadow: 0 0 5px #88888868;
+  }
+  &.crosshair {
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+  }
+  &.tarkov-suspension {
+    margin: 0;
+    padding: 0;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    border: 2px solid #00000028;
+    border-radius: 0;
+    background-color: #000000;
+    box-shadow: none;
+  }
+  &.tarkov-mini-suspension {
+    margin: 0;
+    padding: 0;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    border: 2px solid #00000028;
+    border-radius: 0;
+    background-color: #000000;
+    box-shadow: none;
+    opacity: 0.8;
+  }
+}
+
+* {
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #00000028;
+  }
+  &::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+}
+
+@font-face {
+  font-family: 'font';
+  src: url('../font.ttf');
+}
+
+@font-face {
+  font-family: 'eula';
+  src: url('../eula.ttf');
+}

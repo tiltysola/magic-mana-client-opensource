@@ -1,0 +1,135 @@
+{
+  "name": "magic-mana-opensource",
+  "version": "1.0.0-opensource",
+  "main": "dist/main/background.js",
+  "description": "缇尔蒂的魔法小屋",
+  "homepage": "https://github.com/tiltysola/magic-mana-client-opensource",
+  "author": "TiltySola",
+  "repository": {
+    "url": "https://github.com/tiltysola/magic-mana-client-opensource.git"
+  },
+  "scripts": {
+    "dev": "concurrently -k -n=react,electron -c=green,blue \"npm run dev:react\" \"npm run dev:electron\"",
+    "dev:react": "vite --mode development",
+    "dev:electron": "cross-env NODE_ENV=development node build/electron.js",
+    "build": "npm run build:react && npm run build:electron",
+    "build:win": "npm run build:react && npm run build:electron:win",
+    "build:mac": "npm run build:react && npm run build:electron:mac",
+    "build:react": "vite build",
+    "build:electron": "cross-env NODE_ENV=production node build/electron.js && electron-builder build",
+    "build:electron:win": "cross-env NODE_ENV=production node build/electron.js && electron-builder build --win",
+    "build:electron:mac": "cross-env NODE_ENV=production node build/electron.js && electron-builder build --mac",
+    "serve:react": "vite preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint src --fix",
+    "prettier": "prettier --write src",
+    "fix": "npm run prettier && npm run lint:fix",
+    "clean": "rm -rf dist"
+  },
+  "build": {
+    "appId": "cn.mahoutsukai.opensource.client",
+    "productName": "缇尔蒂的魔法小屋",
+    "copyright": "TiltySola (tilty.mahoutsukai.cn)",
+    "artifactName": "magic-mana-opensource-${os}-${version}.${ext}",
+    "mac": {
+      "icon": "build/icons/mac/common/icon.icns"
+    },
+    "win": {
+      "icon": "build/icons/win/icon.ico"
+    },
+    "linux": {
+      "icon": "build/icons/png/common/512x512.png"
+    },
+    "nsis": {
+      "oneClick": true
+    },
+    "generateUpdatesFilesForAllChannels": true,
+    "files": [
+      "node_modules",
+      "dist/main/**",
+      "dist/render/**"
+    ],
+    "extraFiles": [
+      {
+        "from": "build",
+        "to": "build",
+        "filter": [
+          "**/*"
+        ]
+      },
+      {
+        "from": "external",
+        "to": "external",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ],
+    "electronDownload": {
+      "mirror": "https://npmmirror.com/mirrors/electron/"
+    },
+    "nsisWeb": {
+      "appPackageUrl": "https://npmmirror.com/mirrors/electron-builder-binaries/"
+    }
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.1.4",
+    "ahooks": "^3.7.8",
+    "axios": "^1.4.0",
+    "base64-arraybuffer": "^1.0.2",
+    "braft-editor": "^2.3.9",
+    "braft-utils": "^3.0.12",
+    "chalk": "^4.1.2",
+    "classnames": "^2.3.2",
+    "crypto-js": "^4.1.1",
+    "dayjs": "^1.11.9",
+    "electron-updater": "^6.1.1",
+    "form-data": "^4.0.0",
+    "iconv-lite": "^0.6.3",
+    "keycode": "^2.2.1",
+    "native-reg": "^1.1.1",
+    "ps-list": "^8.1.1",
+    "qrcode": "^1.5.3",
+    "query-string": "^8.1.0",
+    "react": "^18.2.0",
+    "react-color-palette": "^6.2.0",
+    "react-dom": "^18.2.0",
+    "react-error-boundary": "^4.0.13",
+    "react-router-dom": "^6.14.2",
+    "recoil": "^0.7.7",
+    "socket.io-client": "^4.7.1",
+    "sudo-prompt": "^9.2.1",
+    "systeminformation": "^5.21.24",
+    "taskkill": "^5.0.0",
+    "whatwg-fetch": "^3.6.17",
+    "yaml": "^2.3.1"
+  },
+  "devDependencies": {
+    "@types/qrcode": "^1.5.1",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/taskkill": "^5.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "concurrently": "^8.2.0",
+    "cross-env": "^7.0.3",
+    "electron": "^30.0.6",
+    "electron-builder": "^24.13.3",
+    "electron-connect": "^0.6.3",
+    "esbuild": "^0.16.17",
+    "eslint": "^8.45.0",
+    "eslint-config-ali": "^14.0.2",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "less": "^4.1.3",
+    "prettier": "^3.0.0",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.6",
+    "vite-plugin-eslint": "^1.8.1"
+  }
+}

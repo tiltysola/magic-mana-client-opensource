@@ -1,0 +1,26 @@
+{
+  "plugins": ["simple-import-sort", "react-hooks"],
+  "extends": "eslint-config-ali/typescript/react",
+  "rules": {
+    "simple-import-sort/imports": [
+      "error",
+      {
+        "groups": [
+          ["^react"],
+          ["^"],
+          ["^@"],
+          ["^@/pages", "^@/components"],
+          ["^\\."],
+          ["^\\u0000"]
+        ]
+      }
+    ],
+    "no-empty": "off",
+    "no-console": "off",
+    "max-len": "off",
+    "prefer-promise-reject-errors": "off",
+    "import/no-cycle": "off",
+    "react/no-array-index-key": "off",
+    "react-hooks/exhaustive-deps": "off"
+  }
+}

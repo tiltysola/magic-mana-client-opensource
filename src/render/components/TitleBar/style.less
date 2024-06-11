@@ -1,0 +1,73 @@
+.title-bar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 999;
+  &-main {
+    display: inline-block;
+    padding: 6px 24px;
+    border-radius: 18px;
+    vertical-align: middle;
+    background-color: #00000028;
+    backdrop-filter: blur(3px);
+    -webkit-app-region: drag;
+    &-gradient {
+      background: linear-gradient(
+        90deg,
+        #ffffff 0%,
+        #cccccc 10%,
+        #cccccc 90%,
+        #ffffff 100%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: title-bar-gradient 10s infinite linear;
+      background-size: 200% 100%;
+    }
+    &-title {
+      font-size: 13px;
+    }
+    &-subtitle {
+      margin-left: 10px;
+      font-size: 10px;
+      color: #ffffff;
+    }
+    &-online {
+      margin-left: 6px;
+      font-size: 10px;
+      color: #ffffff;
+    }
+  }
+  &-updater {
+    display: inline-block;
+    margin-left: 16px;
+    padding: 4px 24px 8px 24px;
+    border-radius: 18px;
+    background-color: #00000028;
+    vertical-align: middle;
+    cursor: pointer;
+    &-title {
+      font-size: 10px;
+      color: #66dd66;
+      transition: all 0.3s;
+    }
+    &:hover &-title {
+      color: #88ff88;
+    }
+  }
+}
+
+@keyframes title-bar-gradient {
+  from {
+    background-position: 20% 0;
+  }
+
+  25% {
+    background-position: -120% 0;
+  }
+
+  to {
+    background-position: -120% 0;
+  }
+}

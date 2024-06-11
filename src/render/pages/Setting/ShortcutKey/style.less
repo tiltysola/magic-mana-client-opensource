@@ -1,0 +1,36 @@
+.setting {
+  &-shortcut {
+    position: relative;
+    &-input {
+      min-width: 240px;
+      padding: 12px 0;
+      border: none;
+      border-bottom: 1px solid #cccccc28;
+      color: #cccccc;
+      background-color: transparent;
+      transition: all 0.3s;
+      &:hover {
+        border-bottom: 1px solid #cccccc58;
+        color: #ffffff;
+      }
+      &::-webkit-input-placeholder {
+        color: #888888;
+        font-size: 12px;
+      }
+    }
+    &-clear {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 12px 0;
+      border: none;
+      color: #cccccc;
+      background-color: transparent;
+      transition: all 0.3s;
+      cursor: pointer;
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+**/*.d.ts
+node_modules/
+dist/
+
+src/render/assets
+src/render/framework
+
+grimoire/
+tools/

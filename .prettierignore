@@ -1,0 +1,21 @@
+# Dirs
+node_modules/
+dist/
+public/
+src/render/assets
+
+# Husky
+.husky/
+
+# Files
+.eslintrc
+.gitignore
+.npmrc
+.prettierignore
+.prettierrc
+
+# Proceed by eslint
+**/*.js
+**/*.jsx
+**/*.ts
+**/*.tsx

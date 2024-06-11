@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="src/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="no-referrer" />
+    <title>缇尔蒂的魔法小屋</title>
+    <script>
+      const global = globalThis;
+    </script>
+    <script>
+      let initialized = false;
+      setInterval(() => {
+        const root = document.querySelector('#root');
+        if (root && root.children.length === 0 && initialized === true) {
+          // ipcRenderer.send('util_renderer_error');
+          document.write(`
+            <style>
+              .error-occurred {
+                position: relative;
+                display: flex;
+                width: calc(100% - 40px);
+                height: calc(100% - 40px);
+                margin: 20px;
+                border: 2px solid #00000068;
+                border-radius: 24px;
+                background-color: #aaaaaa;
+                box-shadow: 0 0 15px #00000068;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+              }
+              .error-occurred button {
+                padding: 13px 12px 12px 12px;
+                border: none;
+                font-size: 12px;
+                line-height: 18px;
+                color: #dddddd;
+                background-color: transparent;
+                transition: all 0.3s;
+                cursor: pointer;
+              }
+              .error-occurred button:hover {
+                color: #ffffff;
+              }
+            </style>
+            <div class="error-occurred">
+              <button onclick="location.reload();">应用程序崩溃，点击刷新</button>
+            </div>
+          `);
+        } else if (root && root.children.length > 0) {
+          initialized = true;
+        }
+      }, 100);
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="./main.tsx"></script>
+  </body>
+</html>
